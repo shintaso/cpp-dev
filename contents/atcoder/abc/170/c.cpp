@@ -5,11 +5,14 @@ using namespace std;
 typedef long long ll;
 constexpr auto INFI = 2147483647;
 const ll INFL = 9223372036854775807;
- 
+
 int main(){
-    int a, b;
+    ll a;
+    string b;
     cin >> a >> b;
-    cout << a * b << endl;
- 
+    b.erase(b.find('.'), 1);
+    int b_int = atoi(b.c_str());
+    cout << ((a * b_int)/100) << endl;
+
   return 0;
 }
